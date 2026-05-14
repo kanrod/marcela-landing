@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marcela [APELLIDO] — Derecho y lenguaje claro</title>
+<meta name="description" content="Abogada y magíster en lingüística. Auditoría, reescritura y producción de documentación jurídica con principios de lenguaje claro para empresas tech y entidades públicas.">
+<meta name="theme-color" content="#F5EFE6">
+<meta name="author" content="Marcela [APELLIDO]">
+<meta property="og:title" content="Marcela [APELLIDO] — Derecho y lenguaje claro">
+<meta property="og:description" content="Textos jurídicos coherentes, precisos y comprensibles.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:image" content="https://[TU-DOMINIO]/marcela.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%231A2A44' font-family='serif'%3EM%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Marcela [APELLIDO]",
+  "jobTitle": "Abogada y Magíster en Lingüística",
+  "description": "Abogada con maestría en lingüística del Instituto Caro y Cuervo. Auditoría y reescritura de documentación jurídica en lenguaje claro.",
+  "address": {"@type":"PostalAddress","addressCountry":"CO","addressLocality":"Bogotá"},
+  "alumniOf": [{"@type":"EducationalOrganization","name":"Instituto Caro y Cuervo"}],
+  "knowsAbout": ["Derecho","Lenguaje claro","Lingüística aplicada","Redacción jurídica","Auditoría de textos legales"]
+}
+</script>
+
+<style>
+:root {
+  --cream: #F5EFE6;
+  --cream-2: #EFE7D7;
+  --ink: #1A2A44;
+  --ink-2: #2A3A56;
+  --muted: #4A5468;
+  --muted-2: #6B7488;
+  --earth: #8a6a3f;
+  --terra: #C99A6A;
+  --border: rgba(20, 30, 50, 0.12);
+  --border-soft: rgba(20, 30, 50, 0.06);
+  --surface: rgba(20, 30, 50, 0.025);
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Manrope", -apple-system, BlinkMacSystemFont, sans-serif;
+  --container: 1180px;
+  --radius: 4px;
+  --radius-lg: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--cream);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { max-width: var(--container); margin: 0 auto; padding: 0 28px; }
+
+.kicker {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--earth);
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.015em;
+  font-variation-settings: "opsz" 144;
+}
+h1 { font-size: clamp(34px, 5.5vw, 56px); line-height: 1.08; margin-bottom: 22px; }
+h2 { font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin-bottom: 18px; }
+h3 { font-size: clamp(20px, 2vw, 24px); line-height: 1.25; margin-bottom: 12px; }
+h4 { font-size: 17px; line-height: 1.3; font-weight: 600; }
+p { color: var(--muted); }
+
+.section-head { max-width: 680px; margin-bottom: 56px; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(245, 239, 230, 0.85);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 0.5px solid transparent;
+  transition: border-color 0.3s, background 0.3s;
+}
+.nav.scrolled { border-color: var(--border-soft); background: rgba(245, 239, 230, 0.94); }
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  max-width: var(--container);
+  margin: 0 auto;
+}
+.logo {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+.logo em { color: var(--earth); font-style: italic; font-weight: 400; font-size: 15px; }
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a:not(.btn) {
+  font-size: 14px;
+  color: var(--muted);
+  transition: color 0.2s;
+  font-weight: 500;
+}
+.nav-links a:not(.btn):hover { color: var(--ink); }
+.nav-toggle {
+  display: none;
+  background: none;
+  border: 0.5px solid var(--border);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius);
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: var(--font-body);
+  border-radius: var(--radius);
+  border: 0.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s, background 0.2s, color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--ink); color: var(--cream); }
+.btn-primary:hover { background: var(--ink-2); }
+.btn-ghost { background: transparent; color: var(--ink); border-color: var(--ink); }
+.btn-ghost:hover { background: var(--ink); color: var(--cream); }
+.btn-cream { background: var(--cream); color: var(--ink); }
+.btn-cream:hover { background: #fff; }
+.btn-cream-ghost { background: transparent; color: var(--cream); border-color: var(--cream); }
+.btn-cream-ghost:hover { background: var(--cream); color: var(--ink); }
+.btn svg { width: 16px; height: 16px; }
+
+.hero { padding: 64px 0 92px; }
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+.hero-text { max-width: 580px; }
+.hero-text .lead {
+  font-size: clamp(15px, 1.4vw, 17px);
+  line-height: 1.65;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+.cta-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+.hero-image {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  max-width: 380px;
+  justify-self: end;
+  width: 100%;
+}
+.hero-image .accent-shape {
+  position: absolute;
+  inset: 22px -22px -22px 22px;
+  background: var(--terra);
+  border-radius: var(--radius);
+  z-index: 0;
+}
+.hero-image img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius);
+  z-index: 1;
+}
+
+.para-quien {
+  padding: 88px 0;
+  background: var(--cream-2);
+  border-top: 0.5px solid var(--border-soft);
+  border-bottom: 0.5px solid var(--border-soft);
+}
+.scenarios {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 48px;
+}
+.scenario { display: flex; gap: 20px; align-items: flex-start; }
+.scenario-num {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--terra);
+  font-style: italic;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 36px;
+  padding-top: 2px;
+}
+.scenario p { font-size: 15.5px; line-height: 1.6; color: var(--ink); }
+.scenario p strong { font-weight: 600; }
+
+.servicios { padding: 96px 0; }
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.service {
+  padding: 32px 28px;
+  background: #FFFFFF;
+  border: 0.5px solid var(--border-soft);
+  border-radius: var(--radius-lg);
+  position: relative;
+  transition: transform 0.25s, border-color 0.25s;
+}
+.service:hover { transform: translateY(-3px); border-color: var(--border); }
+.service-num {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--earth);
+  letter-spacing: 0.06em;
+  margin-bottom: 18px;
+  display: block;
+}
+.service h3 { margin-bottom: 14px; line-height: 1.25; }
+.service p { font-size: 14.5px; line-height: 1.6; }
+
+.trust { padding: 56px 0; background: var(--surface); }
+.trust-label {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--earth);
+  font-weight: 600;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.trust-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px 22px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.trust-list span[aria-hidden] { color: var(--border); }
+
+.sobre { padding: 96px 0; }
+.sobre-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 64px;
+}
+.sobre-body p { font-size: 16px; line-height: 1.75; margin-bottom: 18px; color: var(--ink-2); }
+.sobre-body p:last-child { margin-bottom: 0; }
+.sobre-body strong { color: var(--ink); font-weight: 600; }
+
+.trayectoria {
+  padding: 96px 0;
+  background: var(--cream-2);
+  border-top: 0.5px solid var(--border-soft);
+  border-bottom: 0.5px solid var(--border-soft);
+}
+.timeline { list-style: none; max-width: 760px; }
+.timeline-item {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 32px;
+  padding: 22px 0;
+  border-bottom: 0.5px solid var(--border-soft);
+  align-items: start;
+}
+.timeline-item:last-child { border-bottom: 0; }
+.timeline-year {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--earth);
+  font-variant-numeric: tabular-nums;
+}
+.timeline-content h4 { margin-bottom: 6px; }
+.timeline-content p { font-size: 14.5px; line-height: 1.55; color: var(--muted); }
+.timeline-content a { color: var(--earth); border-bottom: 1px solid currentColor; }
+.timeline-content a:hover { color: var(--ink); }
+
+.faq { padding: 96px 0; }
+.faq-list { max-width: 780px; }
+.faq-item {
+  border-top: 0.5px solid var(--border);
+  padding: 4px 0;
+}
+.faq-item:last-child { border-bottom: 0.5px solid var(--border); }
+.faq-item summary {
+  cursor: pointer;
+  padding: 22px 0;
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--ink);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  font-family: var(--font-body);
+  font-size: 22px;
+  color: var(--earth);
+  font-weight: 400;
+  transition: transform 0.25s;
+  flex-shrink: 0;
+}
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item-body { padding: 0 0 24px; max-width: 640px; }
+.faq-item-body p { font-size: 15px; line-height: 1.7; }
+
+.cta { padding: 112px 0; background: var(--ink); color: var(--cream); text-align: center; }
+.cta h2 { color: var(--cream); max-width: 720px; margin: 0 auto 18px; }
+.cta p { color: rgba(245, 239, 230, 0.7); font-size: 17px; margin-bottom: 36px; }
+.cta .cta-row { justify-content: center; }
+
+.footer {
+  background: var(--ink);
+  color: rgba(245, 239, 230, 0.55);
+  padding: 36px 0;
+  border-top: 0.5px solid rgba(245, 239, 230, 0.1);
+}
+.footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+.footer .logo { color: var(--cream); font-size: 16px; }
+.footer .logo em { color: var(--terra); }
+.footer-meta { font-size: 13px; }
+
+.whatsapp-fab {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+  z-index: 50;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.whatsapp-fab:hover { transform: scale(1.06); box-shadow: 0 8px 24px rgba(0,0,0,0.22); }
+.whatsapp-fab svg { width: 28px; height: 28px; fill: white; }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 920px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background: var(--cream);
+    border-bottom: 0.5px solid var(--border);
+    padding: 8px 0;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a:not(.btn) {
+    padding: 14px 28px;
+    width: 100%;
+    border-bottom: 0.5px solid var(--border-soft);
+  }
+  .nav-links .btn { margin: 12px 28px; }
+  .nav-toggle { display: flex; align-items: center; justify-content: center; }
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .hero-image { order: -1; max-width: 280px; justify-self: center; }
+  .scenarios { grid-template-columns: 1fr; gap: 28px; }
+  .services-grid { grid-template-columns: 1fr; }
+  .sobre-grid { grid-template-columns: 1fr; gap: 28px; }
+  .timeline-item { grid-template-columns: 70px 1fr; gap: 18px; }
+  .hero { padding: 40px 0 64px; }
+  .para-quien, .servicios, .sobre, .trayectoria, .faq { padding: 72px 0; }
+  .cta { padding: 88px 0; }
+  .whatsapp-fab { bottom: 20px; right: 20px; width: 52px; height: 52px; }
+  .whatsapp-fab svg { width: 26px; height: 26px; }
+}
+@media (max-width: 480px) {
+  .container { padding: 0 20px; }
+  .nav-inner { padding: 16px 20px; }
+  .hero-text .lead { font-size: 15px; }
+  .cta-row { flex-direction: column; align-items: stretch; }
+  .btn { justify-content: center; }
+}
+</style>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="logo" href="#">Marcela <em>— derecho &amp; lenguaje</em></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" id="navToggle">&#9776;</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#servicios">Servicios</a>
+      <a href="#trayectoria">Trayectoria</a>
+      <a href="#faq">FAQ</a>
+      <a href="#cta" class="btn btn-primary">Agenda una consulta</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text fade-in">
+      <div class="kicker">Abogada &middot; Magíster en lingüística</div>
+      <h1>Textos jurídicos que tu equipo, tus clientes y los jueces entienden a la primera.</h1>
+      <p class="lead">Elaboro documentación legal coherente, precisa y comprensible. A partir del análisis de datos identifico los puntos del flujo documental que entorpecen la ejecución y diseño procesos eficientes para la composición de textos jurídicos.</p>
+      <div class="cta-row">
+        <a href="#cta" class="btn btn-primary">Agenda tu consulta inicial</a>
+        <a href="https://wa.me/573124045679?text=Hola%20Marcela%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios" class="btn btn-ghost" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+    <div class="hero-image fade-in">
+      <div class="accent-shape"></div>
+      <img src="marcela.jpg" alt="Marcela [APELLIDO], abogada y magíster en lingüística" width="800" height="1067">
+    </div>
+  </div>
+</section>
+
+<section class="para-quien" id="para-quien">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="kicker">¿Esto es para ti?</div>
+      <h2>Trabajo con quienes necesitan que sus textos legales funcionen.</h2>
+    </div>
+    <div class="scenarios fade-in">
+      <div class="scenario">
+        <div class="scenario-num">01</div>
+        <p><strong>Eres una empresa tech</strong> que necesita contratos, términos y condiciones o políticas que tus usuarios realmente entiendan — y que aguanten en tribunales.</p>
+      </div>
+      <div class="scenario">
+        <div class="scenario-num">02</div>
+        <p><strong>Eres una entidad pública</strong> que debe cumplir con lenguaje claro (Ley 1712 de 2014, CONPES 3785) y no sabes por dónde empezar.</p>
+      </div>
+      <div class="scenario">
+        <div class="scenario-num">03</div>
+        <p><strong>Diriges un equipo jurídico</strong> que produce textos que confunden al cliente o al juez, y eso te está costando tiempo, reprocesos o casos.</p>
+      </div>
+      <div class="scenario">
+        <div class="scenario-num">04</div>
+        <p><strong>Quieres formar a tu equipo</strong> en redacción jurídica eficiente y aplicada al contexto real de tu organización.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="servicios" id="servicios">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="kicker">Servicios</div>
+      <h2>Tres formas de trabajar juntos.</h2>
+    </div>
+    <div class="services-grid">
+      <article class="service fade-in">
+        <span class="service-num">01 / Auditoría</span>
+        <h3>Auditoría y reescritura de textos jurídicos</h3>
+        <p>Contratos, T&amp;C, políticas de privacidad, comunicaciones oficiales. Identifico los puntos del documento que están entorpeciendo la ejecución o generando ambigüedad jurídica, y los reescribo aplicando lenguaje claro sin sacrificar precisión legal.</p>
+      </article>
+      <article class="service fade-in">
+        <span class="service-num">02 / Producción</span>
+        <h3>Documentos jurídicos para empresas tech</h3>
+        <p>Conozco las dinámicas de los equipos de desarrollo. Eso me permite proponer documentación legal alineada con cómo realmente funciona el producto y que no entorpece el roadmap técnico.</p>
+      </article>
+      <article class="service fade-in">
+        <span class="service-num">03 / Formación</span>
+        <h3>Formación en lenguaje claro jurídico</h3>
+        <p>Programas adaptados a equipos jurídicos internos, áreas de comunicación legal y compliance. Diseño cada sesión a partir del contexto real de tu organización.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container">
+    <div class="trust-label">He colaborado y formado equipos en</div>
+    <div class="trust-list">
+      <span>Instituto Caro y Cuervo</span>
+      <span aria-hidden="true">&middot;</span>
+      <span>Corte Constitucional</span>
+      <span aria-hidden="true">&middot;</span>
+      <span>Departamento Nacional de Planeación</span>
+      <span aria-hidden="true">&middot;</span>
+      <span>Cancillería</span>
+      <span aria-hidden="true">&middot;</span>
+      <span>Eatcloud</span>
+    </div>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-side fade-in">
+      <div class="kicker">Sobre mí</div>
+      <h2>Derecho con precisión lingüística.</h2>
+    </div>
+    <div class="sobre-body fade-in">
+      <p>El mercado laboral demanda profesionales interdisciplinares capaces de aportar valor donde el derecho se encuentra con la comunicación. Por eso combino una formación en derecho con una maestría en lingüística: dos campos que juntos me permiten abordar situaciones complejas desde dos frentes — el de la norma y el del lenguaje que la hace operativa.</p>
+      <p><strong>Domino los dos aspectos:</strong> conozco la norma y aplico los procesos propios del lenguaje para elaborar textos coherentes, precisos y comprensibles. A partir del análisis de datos identifico los puntos del flujo documental que entorpecen la ejecución, y diseño procesos eficientes para la composición de textos jurídicos.</p>
+      <p><strong>Con experiencia en el sector tecnológico.</strong> Mi paso por roles de liderazgo y articulación de equipos en tech me dio algo que no se aprende en un aula: comprendo las dinámicas de trabajo de los programadores. Eso me permite proponer a las compañías que usan servicios tecnológicos soluciones sencillas, reales y aplicables — no recomendaciones de manual.</p>
+      <p>No trabajo sola. Cuento con un equipo interdisciplinar conformado por <strong>lingüista, editor y programador</strong>, lo que me permite entregar productos jurídicos que combinan rigor normativo, claridad textual y soporte técnico.</p>
+    </div>
+  </div>
+</section>
+
+<section class="trayectoria" id="trayectoria">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="kicker">Trayectoria</div>
+      <h2>Lo que respalda mi trabajo.</h2>
+    </div>
+    <ol class="timeline fade-in">
+      <li class="timeline-item">
+        <div class="timeline-year">2024</div>
+        <div class="timeline-content">
+          <h4>Tesis con mención meritoria — Maestría en Lingüística</h4>
+          <p>Sustentación de la tesis ante economista y lingüista en octubre de 2024 en el Instituto Caro y Cuervo. <a href="https://bibliotecadigital.caroycuervo.gov.co/id/eprint/1904/" target="_blank" rel="noopener">Consulta la tesis →</a></p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-year">2023</div>
+        <div class="timeline-content">
+          <h4>Becada en la maestría del Instituto Caro y Cuervo</h4>
+          <p>Tutora del diplomado de lenguaje claro para ingenieros del Departamento Nacional de Planeación (DNP). Evaluadora de la Cancillería para los textos escritos de aspirantes en etapa final de selección.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-year">2022</div>
+        <div class="timeline-content">
+          <h4>Ingreso a la Red de Lenguaje Claro de Colombia</h4>
+          <p>A nombre del Instituto Caro y Cuervo. La Red, respaldada por el CONPES 3785 de 2013 y las Leyes 1712 de 2014 y 1757 de 2015, garantiza que la información pública sea comprensible, accesible y transparente. Tutora del diplomado <em>Cómo escribir en lenguaje claro</em> dirigido a abogados sustanciadores y magistrados auxiliares de la Corte Constitucional.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-year">2021</div>
+        <div class="timeline-content">
+          <h4>Liderazgo en Eatcloud — sector agrotech</h4>
+          <p>Articulación de equipos internos y externos, gestión y seguimiento de proyectos territoriales (Cooling2Feed, Agro100). Expositora en eventos del sector como AgroTech y StartCo. Encuentros estratégicos con WWF y FoodBank.</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-year">2019</div>
+        <div class="timeline-content">
+          <h4>Graduación con grado honorífico — Derecho</h4>
+          <p>Reconocimiento por excelencia académica.</p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head fade-in">
+      <div class="kicker">Preguntas frecuentes</div>
+      <h2>Lo que suelen preguntarme antes de empezar.</h2>
+    </div>
+    <div class="faq-list fade-in">
+      <details class="faq-item">
+        <summary>¿Cómo es la primera consulta?</summary>
+        <div class="faq-item-body"><p>Una sesión de 30 minutos por videollamada, sin costo. En esa reunión revisamos tu caso, identifico el alcance del trabajo y, si encajamos, te envío una propuesta concreta con tiempos y honorarios.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Trabajas con empresas fuera de Colombia?</summary>
+        <div class="faq-item-body"><p>Sí. La mayor parte del trabajo es remoto y la documentación jurídica en español aplica para clientes en toda Latinoamérica. Para temas que requieren conocimiento normativo local específico, trabajo con la red de profesionales del país correspondiente.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cuánto tiempo toma una auditoría o reescritura?</summary>
+        <div class="faq-item-body"><p>Depende del volumen y complejidad. Un set de términos y condiciones de un producto digital toma entre dos y tres semanas. Un contrato comercial estándar, una semana. Después de la primera consulta entrego un cronograma preciso.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Qué garantía hay de confidencialidad?</summary>
+        <div class="faq-item-body"><p>Firmo acuerdo de confidencialidad antes de recibir cualquier documento. Toda la información que comparte el cliente queda bajo reserva profesional, tal como lo establece el régimen del ejercicio del derecho en Colombia.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Hacen también litigio o solo documentación?</summary>
+        <div class="faq-item-body"><p>Mi enfoque es la producción, auditoría y formación en documentación jurídica con lenguaje claro. Para litigio puedo derivarte a abogados de mi red con experiencia en el área específica que necesitas.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>¿Cómo se paga el servicio?</summary>
+        <div class="faq-item-body"><p>Cuento con facturación electrónica. Los proyectos se pagan en dos contados: 50% al iniciar y 50% al entregar. Para proyectos de más de tres meses se pueden estructurar pagos mensuales.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="container">
+    <div class="kicker" style="color: var(--terra);">Conversemos</div>
+    <h2>Si tu documentación jurídica está confundiendo a quien la lee, hay margen para mejorarla.</h2>
+    <p>Reservemos 30 minutos para revisar tu caso. Sin compromiso.</p>
+    <div class="cta-row">
+      <a href="[CAL_URL]" class="btn btn-cream" target="_blank" rel="noopener">Agenda tu consulta inicial</a>
+      <a href="https://wa.me/573124045679?text=Hola%20Marcela%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios" class="btn btn-cream-ghost" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Escríbeme por WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="logo">Marcela <em>— derecho &amp; lenguaje</em></div>
+    <div class="footer-meta">© 2026 · Bogotá, Colombia · Todos los derechos reservados</div>
+  </div>
+</footer>
+
+<a class="whatsapp-fab" href="https://wa.me/573124045679?text=Hola%20Marcela%2C%20vi%20tu%20p%C3%A1gina%20y%20quiero%20saber%20m%C3%A1s%20sobre%20tus%20servicios" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+const nav = document.getElementById('nav');
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+
+navToggle.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open);
+});
+
+navLinks.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  });
+});
+
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 8);
+}, { passive: true });
+
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-in').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>
